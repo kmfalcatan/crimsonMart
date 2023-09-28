@@ -1,0 +1,391 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background-color: rgb(237,242,244);
+}
+
+.headerContainer{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(217,4,41);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.logoContainer{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+
+.logo{
+    height: 48px;
+    margin-left: 20px;
+    margin-top: 1px;
+    margin-right: 10px;
+}
+
+
+.notificationContainer, .addToCartContainer{
+    width: 50px;
+    height: 100%;
+    transition: background-color 0.15s, opacity 0.15s, border-radius 0.15s;
+}
+
+.menubarContainer{
+    padding-top: 2px;
+    width: 50px;
+    height: 48px;
+    outline: white dashed 1px;
+}
+
+.sideNavBarContainer{
+    height: 100%;
+    width:  200px;
+    position: absolute;
+    right: -200px;
+    top: 50px;
+    background-color: rgb(217,4,41);
+    z-index: 1;
+}
+
+.fadeIn{
+    animation: sideIn 0.6s ease forwards
+}
+
+.sideNavBar{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: solid 1px white;
+}
+
+.container{
+    outline: red dashed 1px;
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
+}
+
+.BackWmsuShopContainer{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.backWmsuBtn{
+    height: 30px;
+    margin-left: 10px;
+    border-bottom: solid 1px rgb(131, 131, 131, 0.5);
+}
+
+.nameShop{
+    color: rgb(217, 4, 41);
+    padding-left: 5px;
+    margin-left: -1px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px rgb(131, 131, 131, 0.5);
+}
+
+.uniformNameContainer{
+    outline: red dashed 1px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(217, 4, 41);
+}
+
+.itemContainer{
+    margin-top: 20px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1em;
+    row-gap: 1em;
+    justify-content: center;
+}
+
+.subItemContainer{
+    height: 270px;
+    width: 200px;
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(170, 170, 170);
+    border: solid 1px rgb(131, 131, 131);
+    cursor: pointer;
+}
+
+.imageContainer{
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px rgba(131, 131, 131, 0.479);
+}
+
+.itemNameContainer{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.itemName{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 5px;
+}
+
+.ratingContainer1{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.rating{
+    height: 18px;
+    margin-right: 5px;
+}
+
+.rateCount{
+    font-size: 15px;
+}
+
+.image{
+    height: 11rem;
+}
+
+.productContainer {
+    position: fixed;
+    top: 0px; 
+    left: 0px; 
+    height: 100%;
+    width: 100%;
+    background-color: rgb(237,242,244);
+    z-index: 999;
+    display: none;
+}
+
+
+.backBtnContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    margin-right: 55px;
+    background-color: rgb(217,4,41);
+}
+
+.subProductContainer{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.backBtn{
+    display: inline-block;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer1{
+    height: 100%;
+    width: 500px;
+    margin-left: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgba(131, 131, 131, 0.5);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.rightsideContainer{
+    height: 100%;
+    width: 870px;
+    margin-left: 50px;
+    border: solid 1px rgb(131, 131, 131, 0.5);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.nameOfItemContainer{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-bottom: solid 1px rgb(131, 131, 131);
+}
+
+.ratingContainer1{
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.image1{
+    height: 25px;
+    margin-right: 5px;
+}
+
+.buttonContainer2, .buttonContainer3{
+    height: 40px;
+    width: 550px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    padding-left: 10px;
+}
+
+.buttonContainer3{
+    width: 400px;
+}
+
+.subButtonContainer2, .subButtonContainer3{
+    height: 100%;
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button, .button1, .button2{
+    border-radius: 10px;
+    border: solid 1px;
+    cursor: pointer;
+}
+
+.button{
+    height: 40px;
+    width: 50px;
+}
+
+.button1{
+    height: 40px;
+    width: 60px;
+}
+
+.button2{
+    height: 40px;
+    width: 130px;
+}
+.subProductContainer1{
+    height: 100%;
+}
+
+.button, .button1, .button2{
+    background-color: rgb(217,4,41);
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.15s, color 0.15s, transform 0.15s;
+}
+
+.button2:hover{
+    transform: scale(1.1);
+    background-color: transparent;
+    color: rgb(217,4,41);
+}
+
+.button2:active{
+    transform: scale(1);
+    background-color: rgb(217,4,41);
+    color: white;
+}
+
+.count8{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 5px;
+    right: 62px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    padding-bottom: 2px;
+    color: rgb(217,4,41);
+}
+
+.itemImage{
+    height: 100%;
+}
+
+.addToCartContainer1{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 55px;
+    transition: background-color 0.15s, opacity 0.15s, border-radius 0.15s;
+}
+
+.descriptionContainer{
+    height: 345px;
+    width: 610px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 7px;
+}
+
+.description{
+    height: 300px;
+    width: 480px;
+    border-radius: 10px;
+    border: solid 1px rgb(131, 131, 131, 0.5);
+    padding: 10px;
+    background-color: white;
+}
+
+.itemPriceContainer{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.desc{
+    margin-bottom: 10px;
+}
+
+@keyframes sideIn {
+    from{
+
+    } to{
+        position: absolute;
+        right: 0px;
+    }
+}
