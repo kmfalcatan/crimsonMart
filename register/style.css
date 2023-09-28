@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    background-image: url(pictures/Untitled\ design.png);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.background{
+    background: linear-gradient(red, white);
+    width: 100%;
+    height: 800px;
+    opacity: 0.4;
+}
+
+.container{
+    width: 100%;
+    height: 785px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -799px;
+    position: absolute;
+}
+
+.registerContainer{
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    border: solid 1px red;
+    animation: up 1s ease forwards;
+
+    backdrop-filter: blur(10px);
+}
+
+.uploadImageContainer{
+    width: 400px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 150px;
+    height: 150px;
+    border: solid 1px red;
+}
+
+.uploadImage{
+    width: 400px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chooseFile{
+    color: transparent;
+    margin-left: 155px;
+}
+
+.usernameContainer, .passwordContainer{
+    width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.username, .password, .againPassword{
+    position: absolute;
+    z-index: 1;
+    margin-right: 170px;
+    color: red;
+}
+
+.inputUser{
+    position: relative;
+    height: 30px;
+    width: 250px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px;
+    border-color: red;
+    color: red;
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+.backBtnContainer{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.backBtn{
+    background-color: transparent;
+    border: none;
+    margin-left:10px;
+    cursor: pointer;
+    transition: background-color 0.15s, transform 0.15s, box-shadow 0.15s;
+}
+
+.backBtn:hover{
+    border-radius: 100%;
+    border: solid 1px red;
+    width: 35px;
+    background-color: red;
+    box-shadow: 0 0 10px red;
+    transform: scale(1.1);
+}
+
+.backBtn:active{
+    background-color: transparent;
+    transform: scale(0.9);
+}
+
+.highlight{
+    animation: move 0.7s ease forwards;
+}
+
+.submitBtnContainer{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.submitBtn{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    color: red;
+    border: solid 1px red;
+    margin-right: 10px;
+    border-radius: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.15s, transform 0.15s, color 0.15s, box-shadow 0.15s;
+}
+
+.submitBtn:hover{
+    background-color: red;
+    color: white;
+    box-shadow: 0 0 10px red;
+    transform: scale(1.1);
+    border-color: red;
+}
+
+.submitBtn:active{
+    opacity: 0.5;
+    transform: scale(1);
+}
+
+.againPassword{
+    margin-left: 40px;
+}
+
+
+
+@keyframes move {
+    from{
+    }
+    to{
+        margin-bottom: 55px;
+        font-size: 15px;
+    }
+}
+
+@keyframes up {
+    from{
+        margin-bottom: -2000px;
+    }
+    to{
+        margin-top: 0px;
+    }
+}

@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(237,242,244);
+}
+
+.backBtnContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    margin-right: 55px;
+    background-color: rgb(217,4,41);
+    position: fixed;
+}
+
+.backBtn{
+    display: inline-block;
+    width: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: white dashed 1px;
+    z-index: 5;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(237,242,244);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding-top: 60px;
+}
+
+.subContainer{
+    height: 150px;
+    width: 700px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: solid 1px rgb(131, 131, 131);
+    margin-top: 20px;
+}
+
+.imageContainer{
+    height: 140px;
+    width: 180px;
+}
+
+.itemNameContainer{
+    height: 150px;
+    width: 100%;
+    border-left: solid 1px rgb(131, 131, 131);
+}
+
+.itemName{
+    height: 50px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.statusContainer{
+    margin-top: 5px;
+    height: 20px;
+    width: 100%;
+    border-bottom: solid 1px rgb(131, 131, 131);
+}
+
+.subStatusContainer{
+    height: 60px;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.status{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.status1{
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.status2{
+    margin-left: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+}
+
+.quantityContainer, .sizeContainer, .statusContainer1{
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantityContainer{
+    margin-right: 20px;
+}
+
+.statusContainer1{
+    margin-left: 20px;
+    width: 200px;
+}

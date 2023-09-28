@@ -1,0 +1,149 @@
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 80vh;
+    background-image: url(pictures/Untitled\ design.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background{
+    background: linear-gradient(red, white);
+    width: 100%;
+    height: 800px;
+    opacity: 0.4;
+}
+
+
+.logoContainer{
+    height: 400px;
+    width: 400px;
+    margin-top: -760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
+}
+
+.logo{
+    width: 400px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 784px;
+    margin-top: -439px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.welcomeContainer{
+    border: solid red 1px;
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    height: 268px;
+    width: 570px;
+}
+
+.welcome{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.logInAs{
+    margin-top: 20px;
+    text-align: center;
+    color: red;
+}
+
+.logIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    height: 30px;
+}
+
+.studentBtn, .sellerBtn, .adminBtn{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border: solid 1px red;
+    color: red;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.15s, border-color 0.15s, color 0.15s, box-shadow 0.15s, transform 0.15s, opacity 0.15s;
+}
+
+.studentBtn:hover{
+    background-color: red;
+    border-color: red;
+    color: white;
+    box-shadow: 0 0 10px red;
+    transform: scale(1.1);
+}
+
+.sellerBtn:hover{
+    background-color: red;
+    border-color: red;
+    color: white;
+    box-shadow: 0 0 10px red;
+    transform: scale(1.1);
+}
+
+.studentBtn:active{
+    opacity: 0.6;
+    transform: scale(1);
+}
+
+.sellerBtn:active{
+    opacity: 0.6;
+    transform: scale(1);
+}
+
+.adminBtn:hover{
+    background-color: red;
+    border-color: red;
+    color: white;
+    box-shadow: 0 0 10px red;
+    transform: scale(1.1);
+}
+
+.adminBtn:active{
+    opacity: 0.6;
+    transform: scale(1);
+}
+
+.studentBtn, .sellerBtn{
+    margin-right: 30px;
+}
+
+.registerContainer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.register{
+    color: red;
+}
+
+a{
+    color: red;
+}

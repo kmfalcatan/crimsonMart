@@ -1,0 +1,280 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.backBtnContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    margin-right: 55px;
+    background-color: rgb(217,4,41);
+    position: fixed;
+}
+
+.backBtn{
+    display: inline-block;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: white dashed 1px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(237,242,244);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.notificationContainer{
+    height: 100%;
+    width: 1000px;
+    background-color: white;
+    margin-top: 55px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.notification{
+    height: 150px;
+    width: 850px;
+    border: solid 1px rgba(133, 133, 133, 0.5);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.paragraph{
+    height: 100%;
+    width: 600px;
+    border-right: solid 1px rgba(133, 133, 133, 0.5);
+}
+
+.subParagraph{
+    padding: 10px;
+}
+
+.setMeetUpContainer{
+    height: 100%;
+    width: 250px;
+    display: flex;
+    justify-content: right;
+    border-left: solid 1px rgba(133, 133, 133, 0.5)
+}
+
+.setTimeLocationBtn{
+    height: 40px;
+    width: 150px;
+    margin-top: 100px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: rgb(217,4,41);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s, border 0.15s, transform 0.15s;
+}
+
+.setTimeLocationBtn:hover{
+    background-color: white;
+    color: rgb(217,4,41);
+    border: solid 1px rgb(217,4,41);
+    transform: scale(1.1);
+}
+
+.setTimeLocationBtn:active{
+    background-color: rgb(217,4,41);
+    color: white;
+    transform: scale(1);
+}
+
+.actionContainer{
+    height: 100%;
+    width: 250px;
+    display: flex;
+    justify-content: right;
+    border-left: solid 1px rgba(133, 133, 133, 0.5)
+}
+
+.actionBtn{
+    height: 40px;
+    width: 100px;
+    margin-top: 100px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: solid 1px rgb(217,4,41);
+    background-color: white;
+    color: rgb(217,4,41);
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s, border 0.15s, transform 0.15s;
+}
+
+.actionBtn:hover{
+    background-color: rgb(217,4,41);
+    color: white;
+    border: solid 1px rgb(217,4,41);
+    transform: scale(1.1);
+}
+
+.actionBtn:active{
+    background-color: white;
+    color: rgb(217,4,41);
+    transform: scale(1);
+}
+
+.actionBtn1{
+    height: 40px;
+    width: 100px;
+    margin-top: 100px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: rgb(217,4,41);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s, border 0.15s, transform 0.15s;
+}
+
+.actionBtn1:hover{
+    background-color: white;
+    color: rgb(217,4,41);
+    border: solid 1px rgb(217,4,41);
+    transform: scale(1.1);
+}
+
+.actionBtn1:active{
+    background-color: rgb(217,4,41);
+    color: white;
+    transform: scale(1);
+}
+
+.setMeetUpContainer1{
+    position: fixed;
+    top: 0px; 
+    left: 0px; 
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.521);
+    z-index: 999;
+    display: none;
+}
+
+.subSetMeetUpContainer1{
+    height:320px;
+    width: 600px;
+    background-color: rgb(237,242,244);
+    margin-left: 30rem;
+    padding-top: 18px;
+    border-radius: 20px;
+    margin-top: 180px;
+}
+
+.backBtnContainer1{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(217,4,41);
+    position: fixed;
+}
+
+.row1Container{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: solid 1px rgba(133, 133, 133, 0.5);
+    border-top: solid 1px rgba(133, 133, 133, 0.5);
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+.row2Container, .row3Container{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.location{
+    margin-left: 20px;
+    height: 25px;
+    width: 350px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+.date{
+    margin-right: 20px;
+    height: 25px;
+    width: 180px;
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+.row3Container{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.time{
+    height: 25px;
+    width: 200px;
+    border-radius: 5px;
+    border: solid 1px;
+    margin-left: 20px
+}
+
+.row4Container{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.submitBtn{
+    margin-right: 20px;
+    height: 40px;
+    width: 120px;
+    background-color: rgb(217,4,41);
+    color: white;
+    border: none;
+    border-radius: 10px;transition: background-color 0.15s, color 0.15s, border 0.15s, transform 0.15s;
+}
+
+.submitBtn:hover{
+    background-color: white;
+    color: rgb(217,4,41);
+    border: solid 1px rgb(217,4,41);
+    transform: scale(1.1);
+}
+
+.submitBtn:active{
+    background-color: rgb(217,4,41);
+    color: white;
+    transform: scale(1);
+}

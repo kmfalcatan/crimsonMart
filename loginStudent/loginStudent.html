@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <div class="container">
+        <div class="containerLogIN">
+            <div class="backBtnContainer">
+                <a href="/MainPage/index.html"><button class="backBtn"><svg width="30" height="30" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 12H5"></path>
+                    <path d="m12 19-7-7 7-7"></path>
+                   </svg></button></a>
+            </div>
+
+            <div class="login">
+                <p>Login as Student</p>
+            </div>
+
+            <div class="userContainer">
+                <p class="username">Username:</p>
+                <input class="inputElement identifyUser" type="text" required>
+            </div>
+            <div class="passwordContainer">
+                <p class="password">Password:</p>
+                <input class="inputElement identifyPass" type="password" required>
+            </div>
+
+            <div class="logInBtnContainer">
+                <button onclick="identify()" class="btnLogIn">Log In</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

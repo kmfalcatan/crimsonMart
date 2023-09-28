@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(pictures/Untitled\ design.png);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.background{
+    background: linear-gradient(red, white);
+    width: 100%;
+    height: 800px;
+    opacity: 0.4;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 798px;
+    outline: black dashed 1px;
+    margin-top: -799px;
+}
+
+.containerLogIN{
+    width: 400px;
+    height: 350px;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: solid 2px;
+    border-color: red;
+    animation: up 1s ease forwards;
+    margin-top: 50px;
+    position: absolute;
+}
+
+.login{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+}
+
+.userContainer, .passwordContainer{
+    margin-top: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.username, .password{
+    position: absolute;
+    display: flex;
+    left: 75px;
+    font-size: 20px;
+}
+
+.highlight, .highlight1{
+    animation: move 0.8s ease forwards;
+}
+
+.inputElement{
+    height: 30px;
+    width: 250px;
+    border: none;
+    border-bottom: solid 1px;
+    background-color: transparent;
+    position: relative;
+    color: red;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.lineContainer{
+    border-bottom: solid 1px;
+    margin-top: 90px;
+    border-color: rgba(228, 227, 227, 0.541);
+    position: relative;
+}
+
+.logInAs{
+    position: absolute;
+    width: 100%;
+    font-size: 13px;
+    background-color: rgba(255, 255, 255, 0.884);
+    height: 18px;
+    width: 110px;
+    margin-left: 140px;
+    text-align: center;
+    margin-top: -9px;
+    border-radius: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+.logInBtnContainer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.btnLogIn, .btnRegister{
+    margin-right: 20px;
+    padding: 8px 30px;
+    border: red solid 1px;
+    background-color: antiquewhite;
+    color: red;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+
+.btnLogIn:hover{
+    background-color: red;
+    color: white;
+    box-shadow: 0px 0px 20px red;
+    transform: scale(1.1);
+}
+
+.btnLogIn:active{
+    opacity: 0.6;
+    transform: scale(1);
+}
+
+.registerBtnContainer{
+    width: 100%;
+    height: 50px;
+    margin-top: 140px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.btnRegister:hover{
+    background-color: red;
+    color: white;
+    box-shadow: 0px 0px 20px red;
+    transform: scale(1.1);
+}
+
+.btnRegister:active{
+    opacity: 0.6;
+    transform: scale(1);
+}
+
+.paragraph{
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.backBtnContainer{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.backBtn{
+    background-color: transparent;
+    border: none;
+    margin-left:10px;
+    cursor: pointer;
+    transition: background-color 0.15s, transform 0.15s, box-shadow 0.15s;
+}
+
+.backBtn:hover{
+    border-radius: 100%;
+    border: solid 1px red;
+    width: 35px;
+    background-color: red;
+    box-shadow: 0 0 10px red;
+    transform: scale(1.1);
+}
+
+.backBtn:active{
+    background-color: transparent;
+    transform: scale(0.9);
+}
+
+@keyframes move {
+    from{
+        margin: 0;
+    }
+    to{
+        font-size: 18px;
+        margin-bottom: 55px;
+        margin-left: px;
+    }
+}
+
+@keyframes up {
+    from{
+        margin-bottom: -2000px;
+    }
+    to{
+        margin-top: 0px;
+    }
+}

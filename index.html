@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <div class="headerContainer">
+        <div class="logoContainer">
+            <img class="logo" src="picture/download-removebg-preview.png" alt="">
+            <p>Crimson Mart</p>
+        </div>
+
+        <div class="buttonContainer">
+            <div class="notificationContainer">
+                <a href="notification/notification.html">
+                    <img class="notification" src="picture/notification.png" alt="">
+                    <p class="count1">0</p>
+                    <p class="notificationText">Notification</p>
+                </a>
+            </div>
+
+            <div class="addToCartContainer">
+                <a href="addToCart/addtocart.html">
+                    <img class="addToCart" src="picture/add to cart.png" alt="">
+                    <p class="count">0</p>
+                    <p class="cartText">Cart</p>
+                </a>
+            </div>
+
+            <div class="menubarContainer" onclick="toggleMenu(this)">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="sideNavBarContainer">
+        <div class="sideNavBar">
+            <a class="profile" href="profile/profile.html">
+                <p>Profile</p>
+            </a>
+        </div>
+
+        <div class="sideNavBar">
+            <a class="status" href="status/status.html">
+                <p>Status</p>
+            </a>
+        </div>
+
+        <div class="sideNavBar">
+            <a class="myOrder" href="myOrders/myOrder.html">
+                <p>My Order</p>
+            </a>
+        </div>
+        <div class="sideNavBar">
+            <a class="studentShop" href="studentShop.html">
+                <p>Student Shop</p>
+            </a>
+        </div>
+        <div class="sideNavBar">
+            <a class="logOut" href="/MainPage/index.html">
+                <p>Log Out</p>
+            </a>
+        </div>
+     
+    </div>
+
+    <div class="container">
+        <div class="searchBarContainer">
+            <div class="subSearchBarContainer">
+                <div class="searchBar">
+                    <input class="searchInput" type="text" name="" id="">
+                    <img class="searchIcon" src="picture/search.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="filterBtnContainer">
+            <div class="subFilterBtnContainer">
+                <div class="filterBtn">
+                    <a href="uniform_men/uniformMen.html">
+                        <button class="btn">
+                            <img class="filter" src="picture/uniform-men.png" alt="">
+                            <p class="iconName">Uniform for Men</p>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="filterBtn">
+                    <a href="uniform_women/uniformWomen.html">
+                        <button class="btn">
+                            <img class="filter" src="picture/uniform-women.png" alt="">
+                            <p class="iconName">Uniform for Women</p>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="filterBtn">
+                    <a href="peUniform/peUniform.html">
+                        <button class="btn">
+                            <img class="filter" src="picture/PE.png" alt="">
+                            <p class="iconName">P.E. Uniform</p>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="filterBtn">
+                    <a href="deptShirt/deptShirt.html">
+                        <button class="btn">
+                            <img class="filter" src="picture/dept_shirt.png" alt="">
+                            <p class="iconName1">Student Deparment Shirt</p>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="filterBtn">
+                    <a href="lanyard/lanyard.html">
+                        <button class="btn">
+                            <img class="filter" src="picture/lanyard.png" alt="">
+                            <p class="iconName">Lanyard</p>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="nameOfShop">
+            <p class="shop">WMSU Shop</p>
+        </div>
+
+        <div class="itemContainer">
+            <div class="subItemContainer">
+                <div class="imageContainer">
+                    <img class="image" src="picture/download-removebg-preview.png" alt="">
+                </div>
+
+                <div class="itemNameContainer">
+                    <p class="itemName">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, vitae earum dolore accusantium dolorem commodi eos, adipisci veritatis ut rem est eum beatae illum inventore repellendus nisi at, quas excepturi.</p>
+                </div>
+
+                <div class="ratingContainer">
+                    <img class="rating" src="picture/rating-30.png" alt="">
+                    <p class="rateCount">100</p>
+                </div>
+            </div>
+
+            <div class="subItemContainer">
+                <div class="imageContainer">
+                    <img class="image" src="picture/download-removebg-preview.png" alt="">
+                </div>
+
+                <div class="itemNameContainer">
+                    <p class="itemName">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, vitae earum dolore accusantium dolorem commodi eos, adipisci veritatis ut rem est eum beatae illum inventore repellendus nisi at, quas excepturi.</p>
+                </div>
+
+                <div class="ratingContainer">
+                    <img class="rating" src="picture/rating-30.png" alt="">
+                    <p class="rateCount">100</p>
+                </div>
+            </div>
+
+            <div class="subItemContainer">
+                <div class="imageContainer">
+                    <img class="image" src="picture/download-removebg-preview.png" alt="">
+                </div>
+
+                <div class="itemNameContainer">
+                    <p class="itemName">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, vitae earum dolore accusantium dolorem commodi eos, adipisci veritatis ut rem est eum beatae illum inventore repellendus nisi at, quas excepturi.</p>
+                </div>
+
+                <div class="ratingContainer">
+                    <img class="rating" src="picture/rating-30.png" alt="">
+                    <p class="rateCount">100</p>
+                </div>
+            </div>
+
+            <div class="subItemContainer">
+                <div class="imageContainer">
+                    <img class="image" src="picture/download-removebg-preview.png" alt="">
+                </div>
+
+                <div class="itemNameContainer">
+                    <p class="itemName">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, vitae earum dolore accusantium dolorem commodi eos, adipisci veritatis ut rem est eum beatae illum inventore repellendus nisi at, quas excepturi.</p>
+                </div>
+
+                <div class="ratingContainer">
+                    <img class="rating" src="picture/rating-30.png" alt="">
+                    <p class="rateCount">100</p>
+                </div>
+            </div>
+
+            <div class="subItemContainer">
+                <div class="imageContainer">
+                    <img class="image" src="picture/download-removebg-preview.png" alt="">
+                </div>
+
+                <div class="itemNameContainer">
+                    <p class="itemName">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, vitae earum dolore accusantium dolorem commodi eos, adipisci veritatis ut rem est eum beatae illum inventore repellendus nisi at, quas excepturi.</p>
+                </div>
+
+                <div class="ratingContainer">
+                    <img class="rating" src="picture/rating-30.png" alt="">
+                    <p class="rateCount">100</p>
+                </div>
+            </div>
+
+            <div class="subItemContainer">
+                <div class="imageContainer">
+                    <img class="image" src="picture/download-removebg-preview.png" alt="">
+                </div>
+
+                <div class="itemNameContainer">
+                    <p class="itemName">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, vitae earum dolore accusantium dolorem commodi eos, adipisci veritatis ut rem est eum beatae illum inventore repellendus nisi at, quas excepturi.</p>
+                </div>
+
+                <div class="ratingContainer">
+                    <img class="rating" src="picture/rating-30.png" alt="">
+                    <p class="rateCount">100</p>
+                </div>
+            </div>
+
+            <div class="subItemContainer">
+                <div class="imageContainer">
+                    <img class="image" src="picture/download-removebg-preview.png" alt="">
+                </div>
+
+                <div class="itemNameContainer">
+                    <p class="itemName">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, vitae earum dolore accusantium dolorem commodi eos, adipisci veritatis ut rem est eum beatae illum inventore repellendus nisi at, quas excepturi.</p>
+                </div>
+
+                <div class="ratingContainer">
+                    <img class="rating" src="picture/rating-30.png" alt="">
+                    <p class="rateCount">100</p>
+                </div>
+            </div>
+  
+            <div class="productContainer js-productContainer">
+                <div class="backBtnContainer">
+                    <div class="backBtn">
+                        <a class="back" href="" type="button"><img src="picture/arrow-left (1).png" alt=""></a>
+                    </div>
+
+                    <div class="buttonContainer1">
+                        <div class="notificationContainer1">
+                            <a href="notification/notification.html">
+                                <img class="notification" src="picture/notification.png" alt="">
+                                <p class="count1">0</p>
+                                <p class="notificationText">Notification</p>
+                            </a>
+                        </div>
+            
+                        <div class="addToCartContainer">
+                            <img class="addToCart" src="picture/add to cart.png" alt="">
+                            <p class="count">0</p>
+                            <p class="cartText">Cart</p>
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="subProductContainer">
+                    <div class="imageContainer1">
+                        <img class="itemImage" src="picture/download-removebg-preview.png" alt="">
+                    </div>
+
+                    <div class="rightsideContainer">
+                        <div class="nameOfItemContainer">
+                            <p>CCS Uniform for men</p>
+                        </div>
+
+                        <div class="itemPriceContainer">
+                            <p>Price: $399.99</p>
+                        </div>
+
+                        <div class="ratingContainer1">
+                            <img class="image1" src="picture/rating-40.png" alt="">
+                            <p class="rateCount1">100</p>
+                        </div>
+
+                        <div class="buttonContainer3">
+                            <div class="subButtonContainer3">
+                                <select class="button" name="" id="">
+                                    <option value="">Qty</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                </select>
+
+                                <select class="button1" name="" id="">
+                                    <option value="">Size</option>
+                                    <option value="">S</option>
+                                    <option value="">M</option>
+                                    <option value="">L</option>
+                                    <option value="">XL</option>
+                                    <option value="">XXL</option>
+                                    <option value="">XXXL</option>
+                                </select>
+                                <button class="button2">Contact to Seller</button>
+                                <button class="button2">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subProductContainer1">
+                    <div class="descriptionContainer">
+                        <div class="description">
+                            <p class="desc">Description:</p>
+                            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta totam laborum doloremque iste enim ad. At ut sequi molestias explicabo, a, possimus similique aspernatur, ex fugit magnam ipsum magni beatae!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
